@@ -1,8 +1,8 @@
 {
-    "name": "wallabag/tcpdf",
+    "name": "fossar/tcpdf-parser",
     "homepage": "https://www.wallabag.org/",
     "type": "library",
-    "description": "Keeping a working 6.2.x TCPDF version.",
+    "description": "Extracted the parser from tcpdf.",
     "keywords": [
         "PDF",
         "tcpdf",
@@ -27,30 +27,16 @@
         }
     ],
     "replace": {
-        "tecnickcom/tcpdf": "6.2.*"
+        "tecnickcom/tcpdf": "6.2.*",
+        "wallabag/tcpdf": "6.2.*"
     },
     "require": {
         "php": ">=5.3.0"
     },
     "autoload": {
         "classmap": [
-            "fonts",
-            "config",
-            "include",
-            "tcpdf.php",
             "tcpdf_parser.php",
-            "tcpdf_import.php",
-            "tcpdf_barcodes_1d.php",
-            "tcpdf_barcodes_2d.php",
-            "include/tcpdf_colors.php",
-            "include/tcpdf_filters.php",
-            "include/tcpdf_font_data.php",
-            "include/tcpdf_fonts.php",
-            "include/tcpdf_images.php",
-            "include/tcpdf_static.php",
-            "include/barcodes/datamatrix.php",
-            "include/barcodes/pdf417.php",
-            "include/barcodes/qrcode.php"
+            "include/tcpdf_filters.php"
         ]
     }
 }

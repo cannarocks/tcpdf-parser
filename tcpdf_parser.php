@@ -40,9 +40,6 @@
  * @version 1.0.15
  */
 
-// include class for decoding filters
-require_once(dirname(__FILE__).'/include/tcpdf_filters.php');
-
 /**
  * @class TCPDF_PARSER
  * This is a PHP class for parsing PDF documents.<br>
